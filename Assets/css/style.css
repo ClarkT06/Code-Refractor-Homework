@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/*changes the color of the body to white to ensure a clean contrast*/
+body {
+    background-color: #d9dcd6;
+}
+/*helps the size of the outside area of the header to ensure it's clean,
+background color to blue and provides a unique font to differentiate from body*/
+.header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2a607c;
+    color: #ffffff;
+}
+
+/*Emphasizes the size of the header*/
+.header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+/*Emphasizes the color of the header*/
+.header h1 .seo {
+    color: #d9dcd6;
+}
+
+/*Adds space for the header and positions it to the right of the screen*/
+.header div {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+
+.header div ul {
+    list-style-type: none;
+}
+
+/*Adds the list to stay inline in the screen with some margin to the left side for clear spacing*/
+.header div ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+p {
+    font-size: 16px;
+}
+
+.hero {
+    height: 800px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/digital-marketing-meeting.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+
+.content {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.benefits {
+    margin-right: 20px;
+    padding: 20px;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #2589bd;
+    z-index: 1;
+}
+/*Changed the classes from benefit-brand and benefit-cost to combine them to benefit-lead because they did the same things*/
+.benefit-lead {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+
+
+.benefit-lead h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+.benefit-lead img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+
+/*Combined 3 classes to content-seo class to minimize the CSS and create a smoother flow.
+Utilized the class for the img and h2 heading also */ 
+
+.content-seo {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+
+}
+
+.content-seo img {
+
+    max-height: 200px;
+}
+
+
+.content-seo h2
+{
+    margin-bottom: 20px;
+    font-size: 36px;
+
+}
+
+/*aligns the tect to the center, makes the size a tad bigger and centralizes the message */
+.footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+/*Shows the smaller size from the 1at footr to add emphasis*/
+.footer h2 {
+    font-size: 20px;
+}
+
+
+/* Added Media tag to resize for smaller screen under 830px */
+
+@media only screen and (max-width: 1020px) {
+/*edited the width to wrap under the primary content in a small screen more*/
+    .benefits {
+
+        width: 100%;
+        margin-left: 20px;
+
+    }
+
+/*Flexes the header to align to the right while creating a list for a smaller screen*/
+    .header {
+
+        display: flex;
+        justify-content: space-between;
+        text-align: right;
+    }
+/*flexes the content to keep the size intact in smaller screen while spreading to the entire screen*/
+    .content {
+        flex-wrap: wrap;
+        min-height: 400px;
+        width: 100%;
+
+
+    }
+
+}
